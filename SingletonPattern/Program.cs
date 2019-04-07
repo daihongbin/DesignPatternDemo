@@ -10,6 +10,14 @@ namespace SingletonPattern
     {
         static void Main(string[] args)
         {
+            var singletonForSingleThread = SingleThrad_Signleton.Instance;
+
+            var singletonForMultiThread = MultiThread_Singleton.Instance;
+
+            var singletonForStatic = Static_Singleton.instance;
+
+            var singletonForStatic2 = Static_Singleton2.instance;
+            Console.ReadLine();
         }
     }
 }
