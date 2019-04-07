@@ -9,9 +9,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Simple", "Simple", "{52AC60
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonPattern", "SingletonPattern\SingletonPattern.csproj", "{C490A455-33A1-435A-82B9-96CA6E63313B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SimpleFactoryMode", "SimpleFactoryMode", "{D126CF40-DC5C-433D-9493-6E36D9234EA7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SimpleFactoryPattern", "SimpleFactoryPattern", "{D126CF40-DC5C-433D-9493-6E36D9234EA7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcConsoleApp", "CalcConsoleApp\CalcConsoleApp.csproj", "{CF179933-B1DE-4B3A-89ED-9B067066172F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SteategyPattern", "SteategyPattern", "{01B53082-3C7C-4698-8093-DB11E2D366B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MallCashier", "MallCashier\MallCashier.csproj", "{5070499C-1624-411D-AA2D-6131FBB94AE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyConsoleApp", "StrategyConsoleApp\StrategyConsoleApp.csproj", "{8714101B-49E3-40D9-9A60-5E0C9FCEC25E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +37,14 @@ Global
 		{CF179933-B1DE-4B3A-89ED-9B067066172F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF179933-B1DE-4B3A-89ED-9B067066172F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF179933-B1DE-4B3A-89ED-9B067066172F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5070499C-1624-411D-AA2D-6131FBB94AE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5070499C-1624-411D-AA2D-6131FBB94AE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5070499C-1624-411D-AA2D-6131FBB94AE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5070499C-1624-411D-AA2D-6131FBB94AE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8714101B-49E3-40D9-9A60-5E0C9FCEC25E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8714101B-49E3-40D9-9A60-5E0C9FCEC25E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8714101B-49E3-40D9-9A60-5E0C9FCEC25E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8714101B-49E3-40D9-9A60-5E0C9FCEC25E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +52,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{C490A455-33A1-435A-82B9-96CA6E63313B} = {52AC60CA-65CE-4AA6-851A-EABD3FEEF642}
 		{CF179933-B1DE-4B3A-89ED-9B067066172F} = {D126CF40-DC5C-433D-9493-6E36D9234EA7}
+		{5070499C-1624-411D-AA2D-6131FBB94AE6} = {01B53082-3C7C-4698-8093-DB11E2D366B8}
+		{8714101B-49E3-40D9-9A60-5E0C9FCEC25E} = {01B53082-3C7C-4698-8093-DB11E2D366B8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6F3D9E73-D49F-4BF9-80E8-A825264ABCAD}
