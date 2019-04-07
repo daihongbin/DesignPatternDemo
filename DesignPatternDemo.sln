@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Simple", "Simple", "{52AC60
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonPattern", "SingletonPattern\SingletonPattern.csproj", "{C490A455-33A1-435A-82B9-96CA6E63313B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SimpleFactoryMode", "SimpleFactoryMode", "{D126CF40-DC5C-433D-9493-6E36D9234EA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcConsoleApp", "CalcConsoleApp\CalcConsoleApp.csproj", "{CF179933-B1DE-4B3A-89ED-9B067066172F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +27,17 @@ Global
 		{C490A455-33A1-435A-82B9-96CA6E63313B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C490A455-33A1-435A-82B9-96CA6E63313B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C490A455-33A1-435A-82B9-96CA6E63313B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF179933-B1DE-4B3A-89ED-9B067066172F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF179933-B1DE-4B3A-89ED-9B067066172F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF179933-B1DE-4B3A-89ED-9B067066172F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF179933-B1DE-4B3A-89ED-9B067066172F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C490A455-33A1-435A-82B9-96CA6E63313B} = {52AC60CA-65CE-4AA6-851A-EABD3FEEF642}
+		{CF179933-B1DE-4B3A-89ED-9B067066172F} = {D126CF40-DC5C-433D-9493-6E36D9234EA7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6F3D9E73-D49F-4BF9-80E8-A825264ABCAD}
