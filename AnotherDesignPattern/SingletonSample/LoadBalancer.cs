@@ -21,7 +21,7 @@ namespace SingletonSample
         }
 
         //公共静态方法，返回唯一实例
-        public static LoadBalancer GetInstance()
+        public static LoadBalancer GetLoadBalancer()
         {
             if (instance == null)
             {
