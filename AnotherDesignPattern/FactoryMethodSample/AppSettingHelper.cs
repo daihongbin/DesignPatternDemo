@@ -1,30 +1,18 @@
-﻿using Microsoft.Extensions.Configuration;
-using System;
-using System.IO;
+﻿using System;
+using System.Configuration;
 
 namespace FactoryMethodSample
 {
     public class AppSettingHelper
     {
-        public static string GetLoggerFactoryName()
+        public static string GetLoggerFactoryName(string key)
         {
-            IConfigurationRoot GetConfiguration()
-            {
-                var builder = new ConfigurationBuilder()
-                    .SetBasePath(Directory.GetCurrentDirectory())
-                    .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-                    .AddEnvironmentVariables();
-
-                IConfigurationRoot configurationRoot = builder.Build();
-                return configurationRoot;
-            }
-
-            return GetConfiguration().GetValue<string>("LoggerFactory");
+            return ConfigurationManager.AppSettings[key];
         }
 
         public static object GetLoggerFactoryInstance()
         {
-            var assemblyName = AppSettingHelper.GetLoggerFactoryName();
+            var assemblyName = AppSettingHelper.GetLoggerFactoryName("LoggerFactory");
             var type = Type.GetType(assemblyName);
 
             var instance = Activator.CreateInstance(type);

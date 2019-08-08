@@ -2,6 +2,7 @@
 
 namespace SingletonSample
 {
+    //单例模式
     class Program
     {
         static void Main(string[] args)

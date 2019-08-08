@@ -1,14 +1,14 @@
-﻿using Microsoft.Extensions.Configuration;
-using System;
-using System.IO;
+﻿using System;
+using System.Configuration;
 
+//简单工厂模式
 namespace SimpleFactorySample
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var chartType = GetConfiguration().GetValue<string>("charttype");
+            var chartType = GetConfiguration("charttype");
             if (string.IsNullOrEmpty(chartType))
             {
                 return;
@@ -18,20 +18,15 @@ namespace SimpleFactorySample
             if (chart != null)
             {
                 chart.Display();
-            }            
+            }
 
             Console.ReadLine();
         }
 
-        public static IConfigurationRoot GetConfiguration()
+        public static string GetConfiguration(string key)
         {
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-                .AddEnvironmentVariables();
-
-            IConfigurationRoot configurationRoot = builder.Build();
-            return configurationRoot;
+            var settingValue = ConfigurationManager.AppSettings[key];
+            return settingValue;
         }
     }
 }

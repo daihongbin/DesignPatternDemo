@@ -1,5 +1,8 @@
-﻿namespace FactoryMethodSample
+﻿using System;
+
+namespace FactoryMethodSample
 {
+    //工厂方法模式
     class Program
     {
         static void Main(string[] args)
@@ -13,6 +16,8 @@
 
             ILogger logger = factory.CreateLogger();
             logger.WriteLog();
+
+            Console.ReadLine();
         }
     }
 }
